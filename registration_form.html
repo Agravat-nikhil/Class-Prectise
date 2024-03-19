@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-form</title>
+</head>
+<body>
+    <form action="post">  
+        <table border="1px">
+            <tr>
+                <td colspan="2" align="center"><h1>Registration Form</h1></td>
+            </tr>
+            
+            <tr>
+                <td>Name:</td>
+                <td>
+                    <input type="text" pattern="[a-z,A-Z]+" required/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email">
+                
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>Phone:</td>
+                <td>
+                    <input type="tel" title="Numbers Only" pattern="[0-9]+" maxlength="10" required>
+                
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                Female<input type="radio" name="gender" value="Female" >
+                Male<input type="radio" name="gender" value="Male">
+                Other<input type="radio" name="gender" value="other">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>BirthDate:</td>
+                <td>
+                    <input type="date">
+                
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Doc:</td>
+                <td>
+                    <input type="file" multiple>
+                
+                </td>
+            </tr>
+
+            <tr>
+                <td>hobbies:</td>
+                <td>
+                    Cooking<input type="checkbox">
+                    Photography<input type="checkbox">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Quantity</td>
+                <td>
+                    <input type="number" min="0" max="3">
+                </td>
+            </tr>
+
+            <tr>
+                <td> Set Password:</td>
+                <td>
+                  <input type="password" min="4" max="8" required>
+                
+                </td>
+            </tr>
+
+            <tr>
+                <td>Select Country:</td>
+                <td>
+                    <select>
+                        <option disabled>----select Country----</option>
+                        <option selected value="India">India</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="USA">USA</option>
+                        <option disabled value="Korea">Korea</option>
+                        <option value="Japan">Japan</option>
+                    </select>                
+                </td>
+            </tr>
+
+            <tr>
+
+                <td>Address:</td>
+                <td>
+                    <textarea name="" id="" cols="25" rows="5"></textarea>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="submit">
+                <input type="reset" value="reset">
+                </td>
+                
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>

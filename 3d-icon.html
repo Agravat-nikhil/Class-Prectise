@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D-icon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    a{
+        height: 50px;
+        width: 50px;
+        background: #fa486600;
+        text-align: center;
+        line-height: 50px;
+        display:block;
+        position: relative;
+
+        transform-style: preserve-3d;
+
+        transition: 1s;
+        
+
+        margin: 150px auto;
+        
+    }
+
+    .front{
+        height: 50px;
+        width: 50px;
+        background: lightblue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateZ(24px);
+        backface-visibility: hidden;
+    }
+
+    .back{
+        height: 50px;
+        width: 50px;
+        background: rgb(67, 252, 166);
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        transform: rotateX(90deg) translateZ(24px);
+    }
+
+    a:hover{
+        transform: rotateX(-90deg) translateZ(24px);
+    }
+
+    a:hover .back{
+        color: black;
+        background-color: bisque;
+    }
+</style>
+
+</head>
+<body>
+    <a href="">
+        <div class="front">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+
+        <div class="back">
+            <i class="fa-brands fa-facebook-f"></i>
+        </div>
+    </a>
+    
+</body>
+</html>

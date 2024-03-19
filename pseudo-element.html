@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent::first-letter{
+            font-size: 90px;
+            color: aliceblue;
+            background-color: bisque;
+            
+        }
+
+        .parent::first-line{
+            font-size: 25px;
+            color: rgb(139, 35, 4);
+            background-color: rgb(207, 124, 23); 
+        }
+
+
+        input::placeholder{
+            font-size: larger;
+            color: aqua;
+
+        }
+
+        input:focus{
+            color: aquamarine;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aut porro ipsum iure suscipit animi fugiat excepturi perspiciatis, doloribus ullam sed delectus cum doloremque. Voluptatem eos consequuntur deleniti fuga maiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora modi deleniti vitae beatae inventore vero, quaerat officia ab necessitatibus dolore, placeat quidem temporibus culpa nesciunt ullam ex error? Illo!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident rem. Voluptates praesentium tempora provident. Laudantium quos nihil commodi harum sed veniam dicta. Aut consectetur nemo porro, debitis officiis ducimus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi hic veritatis excepturi nesciunt nihil cumque commodi. Neque quibusdam sequi fugit sint fuga reprehenderit quisquam, ducimus eaque facilis, cupiditate vero.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dicta voluptatum eaque dolores harum perspiciatis unde, culpa corporis alias rem cumque et odio amet debitis consequuntur vel iure recusandae fugit.</p>
+        </div>
+
+        <div> <!-- child  parent-->
+            <div> <!-- child wala parent-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aut porro ipsum iure suscipit animi fugiat excepturi perspiciatis, doloribus ullam sed delectus cum doloremque. Voluptatem eos consequuntur deleniti fuga maiores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora modi deleniti vitae beatae inventore vero, quaerat officia ab necessitatibus dolore, placeat quidem temporibus culpa nesciunt ullam ex error? Illo!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, provident rem. Voluptates praesentium tempora provident. Laudantium quos nihil commodi harum sed veniam dicta. Aut consectetur nemo porro, debitis officiis ducimus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nisi hic veritatis excepturi nesciunt nihil cumque commodi. Neque quibusdam sequi fugit sint fuga reprehenderit quisquam, ducimus eaque facilis, cupiditate vero.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dicta voluptatum eaque dolores harum perspiciatis unde, culpa corporis alias rem cumque et odio amet debitis consequuntur vel iure recusandae fugit.</p>
+            </div>
+        </div>
+
+        <input type="text" placeholder="enter your text here">  
+    </div>
+</body>
+</html>

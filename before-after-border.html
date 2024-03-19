@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before-after-border-effect</title>
+
+
+    <style>
+        .main::before{
+
+            content: "";
+            height: 450px;
+            width: 450px;
+            background: linear-gradient(#ff0000, yellow, #0000ff, pink, #4c0082, purple);
+            
+            position: absolute;
+            top:-25%;
+            left: -25%;
+
+            transform: rotate(250deg);
+            /* transition: 1s; */
+            animation: effect 3s infinite;
+            
+        }
+
+        .main{
+            height: 300px;
+            width: 300px;
+            background: gray;
+            position: relative;
+            margin: 100px auto;
+            
+            overflow: hidden;
+            
+        }
+
+        .main::after{
+            content: "";
+            height: 250px;
+            width: 250px;
+            background: #000000; 
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* .main:hover::before{
+            transform: rotate(-250deg);
+        } */
+
+        @keyframes effect{
+            100%{
+                transform: rotate(-250deg); 
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="main">
+
+    </div>
+</body>
+</html>

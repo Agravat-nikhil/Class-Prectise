@@ -1,0 +1,38 @@
+@media(max-width:900px)
+{
+    .header .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header .links{
+        width: 100%;
+    }
+
+    .content .x{
+        width: 50%;
+    }
+
+    .content1{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width:500px){
+    .header .logo{
+        width:100%
+    }
+
+    .header .links{
+        width: 500%;
+    }
+
+    .content .x{
+        width: 100%;
+    }
+
+    .content1{
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 200px 200px 200px 200px; */
+    }
+}

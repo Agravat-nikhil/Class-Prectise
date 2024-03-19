@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+
+    <style>
+        .bg{
+            margin-top: 50px;
+            height: 600px;
+            width: 800px;
+            border-radius: 20px;
+            background: url(imgz/img9.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            transition: .30s;
+        }
+
+        .bg:hover{
+            transform: scale(1.4);
+        }
+        .fa-play{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            font-size: 60px;
+            padding: 10px;
+            /* margin: 100px auto */
+            z-index: 1;
+            background: rgb(255, 255, 255);
+            color: rgb(115, 115, 117);
+            transition: .30s ease-in;
+            backface-visibility: hidden;
+        }
+
+        .fa-play:hover{
+            /* font-size: 40px; */
+            /* transform: scale(1.1); */
+            background: rgb(0, 22, 221);
+            color: rgb(255, 255, 255);
+        }
+
+        .circle-animate{
+            height: 150px;
+            width: 150px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="circle-animate">
+            <i class="fa-solid fa-play"></i>
+        </div>
+         
+    </div>
+    <!-- fa-fade -->
+    
+</body>
+</html>

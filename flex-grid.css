@@ -1,0 +1,63 @@
+ *{
+    box-sizing: border-box;
+ }
+
+ .header{
+    /* height: 100px; */
+    width: 100%;
+    background: pink;
+    display: flex;
+    flex-wrap: wrap;
+
+ }
+
+ .header .logo{
+    height: 100px;
+    width: 20%;
+    border: 2px solid;
+
+ }
+
+ .header .links{
+    height: 100px;
+    width: 80%;
+    border: 2px solid;
+ }
+
+ .slider{
+    height: 200px;
+    width: 100%;
+    background: blueviolet;
+ }
+
+ .content{
+    /* height: 400px; */
+    background: lightcoral;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .content .x{
+    height: 400px;
+    width: 25%;
+    border: 2px solid;
+ }
+
+ .content1{
+    height: 400px;
+    background: #e6ca5c;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+ }
+/* we do not have to apply height/width in grid */
+ .content1 .x1{
+    border: 2px solid; 
+ }
+
+ .footer{
+    height: 80px;
+    width: 100%;
+    background: brown;
+ }
+

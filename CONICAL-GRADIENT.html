@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conic-gradient</title>
+
+    <style>
+
+        body{
+            background: url(imgz/img2.jpg);
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            /* border: 2px solid; */
+            margin: 10px;
+            border-radius: 50%;
+            float: left;
+        }
+
+        .b1{
+            background-image: conic-gradient(
+              red, pink, blue  
+            );
+        }
+
+        .b2{
+            background-image: conic-gradient(
+              from 45deg, red, pink, yellow
+            );
+        }
+
+        .b3{
+            background-image: conic-gradient(
+                red, blue, pink, red
+            );
+        }
+
+        .b4{
+            background-image: conic-gradient(at 40% 20%,
+              #000000 90deg, pink, blue  )
+        }
+
+        .b5{
+            background-image:repeating-conic-gradient(red 0deg,red 10deg, yellow 10deg, yellow 20deg);
+        }
+
+        .b6{
+            background-image:repeating-conic-gradient(
+            rgba(0,0,0,0) 0deg, rgba(0,0,0,0) 30deg, 
+            rgba(0,0,0,.5) 30deg, rgba(0,0,0,.5) 50deg);
+            background-color: pink;
+
+            /* background-image:repeating-conic-gradient(
+            rgba(0,0,0,0) 0deg, rgba(0,0,0,.5) 20deg, 
+            rgba(0,0,0,0) 20deg, rgba(0,0,0,.5) 30deg);
+            background-color: pink; */
+        }
+
+        .b7{
+            background-image:repeating-conic-gradient(
+                yellow 0deg, yellow 90deg,
+                black 90deg, black 180deg
+            );
+            background-size: 20px 12px;
+            /* border-radius: 0; */
+        }
+
+        .b8{background-image:conic-gradient(from -45deg,
+                red 0deg, red 90deg,
+                blue 90deg, blue 180deg,
+                #48f593 180deg, #48f593 270deg,
+                #f2843f 270deg, #f2843f 360deg
+            );   
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box b1"></div>
+    <div class="box b2"></div>
+    <div class="box b3"></div>
+    <div class="box b4"></div>
+    <div class="box b5"></div>
+    <div class="box b6"></div>
+    <div class="box b7"></div>
+    <div class="box b8"></div>
+</body>
+</html>
