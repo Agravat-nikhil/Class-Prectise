@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{box-sizing: border-box;}
+
+        body{
+            background: linear-gradient( rgb(21, 20, 20), pink);
+            /* height: 100vh; */
+            background-attachment: fixed;
+        }
+
+        .border-effect1{
+            height: 150px;
+            width: 150px;
+            background: transparent;            
+            margin: 150px auto;
+            padding: 15px;
+            /* border: 10px solid transparent; */
+            border-top: 10px solid red;
+            border-radius: 50%;
+            animation: loading-effect1 2s linear infinite;
+
+        }
+
+        .border-effect2{
+            width: 100px;
+            height: 100px;
+            /* background: red; */
+            padding: 16px;
+            /* border: 10px solid transparent; */
+            border-top: 10px solid rgb(255, 196, 0);
+            border-radius: 50%;
+            animation: loading-effect2 2s linear infinite;
+        }
+
+        .border-effect3{
+            height:50px;
+            width: 50px;
+            background: transparent;           
+            /* border: 10px solid transparent; */
+            border-top: 10px solid rgb(186, 239, 12);
+            border-radius: 50%;
+            animation: loading-effect1 2s linear infinite;
+        }
+
+        @keyframes loading-effect1{
+
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+            /* 0%{transform: rotate(0deg);}
+
+            50%{border-color: rgb(69, 3, 212);}
+
+            100%{transform: rotate(360deg);} */
+        }
+
+        @keyframes loading-effect2{
+
+            from{transform: rotate(360deg);}
+            to{transform: rotate(0deg);}
+
+            /* 0%{transform: rotate(0deg);}
+
+            50%{border-color: rgb(97, 233, 238);}
+
+            100%{transform: rotate(-720deg);}*/
+        } 
+
+        @keyframes loading-effect3{
+
+            /* from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);} */
+            /* 0%{transform: rotate(0deg);}
+
+            50%{border-color: rgb(69, 3, 212);}
+
+            100%{transform: rotate(720deg);}*/
+        } 
+
+
+    </style>
+    <title>loading-animation</title>
+</head>
+<body>
+    <div class="border-effect1">
+
+        <div class="border-effect2">
+
+            <div class="border-effect3">
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

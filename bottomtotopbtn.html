@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>top to bottom button</title>
+    <style>
+
+        *{scroll-behavior: smooth;}
+
+       .x 
+       {
+        border: 2px solid;
+       }
+       #home 
+       {
+        height: 650px;
+       }
+
+       #about 
+       {
+        height: 750px;
+       }
+
+
+       #services 
+       {
+        height: 750px;
+       }
+
+
+       #contact 
+       {
+        height: 450px;
+       }
+
+       .uparrow{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(84, 250, 106, 0.748);
+        bottom: 20px;
+        right: 20px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 50px;
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+
+       }
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div>
+        <a class="uparrow" href="#"><i class="fa-solid fa-arrows-up-to-line"></i></a>
+    </div>
+
+    <div id="home" class="x ">HOME</div>
+    <div id="about" class="x">About</div>
+    <div id="services" class="x">Services</div>
+    <div id="contact" class="x">Contact</div>
+
+    
+</body>
+</html>

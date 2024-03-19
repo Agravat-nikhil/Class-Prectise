@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .nav{
+         padding: 25px 10px; 
+         background: #f49a9a; 
+
+        }
+
+        .nav ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu{
+            list-style: none;
+            border: 2px solid;
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+
+        }
+
+        a{
+            text-decoration: none;
+            font-size: medium;
+            color: aliceblue;
+            font-weight: bold;
+            font-family: sans-serif;
+
+        }
+
+        .submenu{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fc5a3585;
+            /* color: black; */
+            list-style-type: none;
+            letter-spacing: 2px;
+            width: 100px;
+            line-height: 30px;
+            display: none;
+        }
+
+        .menu:hover .submenu{
+            display: block;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li class="menu"><a href="">Home</a></li>
+            <li class="menu"><a href="">About</a></li>
+
+            <li class="menu"><a href="">Service</a>
+             <ul class="submenu">
+                <li><a href="">services 1</a></li>
+                <li><a href="">services 2</a></li>
+                <li><a href="">services 3</a>
+                <ul class="submenu-2">
+                    <li>link-1</li>
+                    <li>link-2</li>
+                </ul>
+                </li>
+                <li><a href="">services 4</a></li>
+             </ul>
+            </li>
+
+            <li class="menu"><a href="">Contact</a></li>
+            <li class="menu"><a href="">Info</a></li>
+        </ul>
+    </div>
+</body>
+</html>

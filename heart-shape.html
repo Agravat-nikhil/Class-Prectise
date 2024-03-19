@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heart-shape</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .animation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         
+    }
+
+    .heart-pump{
+        animation: heart-pumping 1s linear infinite ;
+        
+        position: relative;
+    }
+
+    /* .heart-pump:hover{
+        transform: scale(1.3);
+    } */
+
+
+    .semi-circle{
+        height: 180px;
+        width: 240px;
+        background-color: #f11f42;
+       
+        margin: 100px auto;
+        border-radius: 150px 150px 0 0;
+        
+        display: inline-block;
+        
+        margin-right: -10px;
+    }
+
+    /* .bottom-heart{
+        height: 350px;
+        width: 350px;
+        background-color: #f11f42;
+        margin: 0px 80px;
+        transform: rotate(140deg);
+    } */
+
+    .bottom-heart{
+    width: 0;
+	height: 0;
+	border-left: 235px solid transparent;
+	border-right: 235px solid transparent;
+	border-top: 250px solid #f11f42;
+
+    position: absolute;
+    top:73%;
+    left: 4px;
+    }
+
+    @keyframes heart-pumping{
+        0%{
+            transform: scale(1);
+        }
+
+        50%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1);  
+        }
+    }
+</style>
+<body>
+
+    <div class="animation">
+
+        <div class="heart-pump">
+            <div class="semi-circle">
+    
+            </div>
+            <div class="semi-circle">
+    
+            </div>
+    
+            <div class="bottom-heart">
+    
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
